@@ -1,7 +1,7 @@
 <h1 align="center">¡Hola! Soy Kevin </h1>
 
 <p align="center">
-  Estudiante de Ingeniería en TIC apasionado por el desarrollo web, la administración de sistemas y la tecnología.
+  Estudiante de Ingeniería en TIC.
 </p>
 
 
