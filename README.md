@@ -4,7 +4,6 @@
   Estudiante de Ingeniería en TIC apasionado por el desarrollo web, la administración de sistemas y la tecnología.
 </p>
 
----
 
 ###  Lo que hago
 -  Desarrollo de software y aplicaciones web.
