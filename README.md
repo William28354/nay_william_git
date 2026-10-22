@@ -1,7 +1,7 @@
-<h1 align="center" style="color: #4A90E2;">¡Hola! Soy Kevin </h1>
+<h1 align="center">¡Hola! Soy Kevin </h1>
 
 <p align="center">
-  Estudiante de Ingeniería en TIC apasionado por el desarrollo web, la administración de sistemas y la tecnología. Me encanta aprender constantemente, construir herramientas útiles y resolver problemas a través del código.
+  Estudiante de Ingeniería en TIC apasionado por el desarrollo web, la administración de sistemas y la tecnología.
 </p>
 
 ---
