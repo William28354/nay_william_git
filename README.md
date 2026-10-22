@@ -7,8 +7,8 @@
 ---
 
 ###  Lo que hago
-- 💻 Desarrollo de software y aplicaciones web.
-- 🐧 Experimentación y trabajo con entornos Linux.
-- 🛠️ Mantenimiento, optimización de hardware y ensamblaje de sistemas.
+-  Desarrollo de software y aplicaciones web.
+-  Experimentación y trabajo con entornos Linux.
+-  Mantenimiento, optimización de hardware y ensamblaje de sistemas.
 
 ---
