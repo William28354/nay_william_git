@@ -6,13 +6,9 @@
 
 ---
 
-### 🚀 Lo que hago
+###  Lo que hago
 - 💻 Desarrollo de software y aplicaciones web.
 - 🐧 Experimentación y trabajo con entornos Linux.
 - 🛠️ Mantenimiento, optimización de hardware y ensamblaje de sistemas.
 
 ---
-
-### 🌐 Conéctate conmigo
-- **GitHub:** [Tu Perfil](https://github.com/tu-usuario)
-- **LinkedIn:** [Tu Perfil](https://linkedin.com/in/tu-usuario)
