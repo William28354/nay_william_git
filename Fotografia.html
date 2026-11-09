@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografía & Portafolio</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar">
+        <a class="navbar_logo" href="#inicio">
+            <span class="logo_icon">◈</span>
+            <span class="logo_text">GALERÍA</span>
+        </a>
+        
+        <ul class="nav_links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+        </ul>
+
+        <!-- Botón del menú móvil con el logo OJO.png corregido -->
+        <a href="#" class="nav_toggle" aria-label="Abrir menú">
+            <img src="./images/OJO.png" alt="Menú">
+        </a>
+    </nav>
+
+    <!-- HERO HEADER -->
+    <header class="hero" id="inicio">
+        <video class="videobg" autoplay loop muted playsinline>
+            <source src="./images/Maincra.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>PORTAFOLIO FOTOGRÁFICO</h1>
+            <p>Capturando momentos, historias y perspectiva visual.</p>
+            <a href="#galeria" class="btn">Explorar Galería</a>
+        </div>
+    </header>
+
+    <!-- SECCIÓN DE CARDS / SERVICIOS -->
+    <section class="contenido" id="servicios">
+        <div class="contenido_inner">
+            <h2>NUESTROS SERVICIOS</h2>
+            <p>Especialidades y enfoque técnico de trabajo</p>
+        </div>
+
+        <section class="cards">    
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card_inner">
+                    <div class="card_front">
+                        <div class="card_icon">⚡</div>
+                        <h3 class="card_title">Retrato & Moda</h3>
+                    </div>
+                    <div class="card_back">
+                        <p class="card_text">Sesiones individuales, estudio y exteriores con iluminación personalizada.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card_inner">
+                    <div class="card_front">
+                        <div class="card_icon">🎨</div>
+                        <h3 class="card_title">Edición & Color</h3>
+                    </div>
+                    <div class="card_back">
+                        <p class="card_text">Retoque digital profesional, corrección de color y acabado de autor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card_inner">
+                    <div class="card_front">
+                        <div class="card_icon">🚀</div>
+                        <h3 class="card_title">Paisaje & Urbano</h3>
+                    </div>
+                    <div class="card_back">
+                        <p class="card_text">Fotografía documental, arquitectura y captura de entornos nocturnos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!--SECCION DE GALERÍA-->
+    <section class="seccion_galeria" id="galeria">
+        <div class="contenido_inner">
+            <h2>GALERÍA VISUAL</h2>
+            <p>Explora nuestras colecciones manuales</p>
+        </div>
+
+        <!-- SECCION URBANO -->
+        <div class="contenido_inner" style="margin-top: 40px;">
+            <h3 style="font-size: 1.8rem; color: #0f172a; text-transform: uppercase;">Urbano</h3>
+        </div>
+        <section class="galeria">
+            <div class="galeria_item">
+                <img src="./images/galeria/urbano/Ferrari 360.jpg" alt="Urbano 1">
+                <div class="galeria_overlay">
+                    <span>FONDO</span>
+                </div>
+            </div>
+            <div class="galeria_item">
+                <img src="./images/galeria/urbano/nayeon.jpg" alt="Urbano 2">
+                <div class="galeria_overlay">
+                    <span>FONDO</span>
+                </div>
+            </div>
+            <div class="galeria_item">
+                <img src="./images/galeria/urbano/UWU.jpg" alt="Urbano 2">
+                <div class="galeria_overlay">
+                    <span>FONDO</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECCIO FONDOS -->
+        <div class="contenido_inner" style="margin-top: 40px;">
+            <h3 style="font-size: 1.8rem; color: #0f172a; text-transform: uppercase;">Fondos</h3>
+        </div>
+        <section class="galeria">
+            <div class="galeria_item">
+                <img src="./images/galeria/fondo/fondoom.jpg" alt="Fondo 1">
+                <div class="galeria_overlay">
+                    <span>Que miras??</span>
+                </div>
+            </div>
+            <div class="galeria_item">
+                <img src="./images/galeria/fondo/mauricio.jpg" alt="Fondo 2">
+                <div class="galeria_overlay">
+                    <span>FONDO</span>
+                </div>
+            </div>
+            <div class="galeria_item">
+                <img src="./images/galeria/fondo/Rei Ayanami.jpg" alt="Fondo 2">
+                <div class="galeria_overlay">
+                    <span>FONDO</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION PARAÍSO -->
+        <div class="contenido_inner" style="margin-top: 40px;">
+            <h3 style="font-size: 1.8rem; color: #0f172a; text-transform: uppercase;">Paraíso</h3>
+        </div>
+        <section class="galeria">
+            <div class="galeria_item">
+                <img src="./images/galeria/Paraiso/FANTASMAS.jpg" alt="Paraíso 1">
+                <div class="galeria_overlay">
+                    <span>FONDO</span>
+                </div>
+            </div>
+            <div class="galeria_item">
+                <img src="./images/galeria/Paraiso/halo.jpg" alt="Paraíso 2">
+                <div class="galeria_overlay">
+                    <span>FONDO</span>
+                </div>
+            </div>
+            <div class="galeria_item">
+                <img src="./images/galeria/Paraiso/Castlevania 64.jpg" alt="Paraíso 1">
+                <div class="galeria_overlay">
+                    <span>FONDO</span>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- SECCION NOSOTROS -->
+    <section class="contenido" id="nosotros">
+        <div class="contenido_inner">
+            <h2>Nosotros</h2>
+            <p>Somos un estudio apasionado por congelarinstantes únicos en el tiempo, buscando transmitir emociones puras a través de cada encuadre y perspectiva visual.</p>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section class="contenido" id="contacto" style="background-color: #e2e8f0;">
+        <div class="contenido_inner">
+            <h2>Contacto</h2>
+            <ul style="list-style: none; padding: 0; font-size: 1.1rem; line-height: 2;">
+                <li><strong>Correo:</strong> contacto@studiophoto.com</li>
+                <li><strong>Teléfono:</strong> +52 (000) 000-0000</li>
+            </ul>
+        </div>
+        <!-- SECCION CONTACTO Y BUZÓN DE QUEJAS/SUGERENCIAS -->
+    <section class="contenido" id="">
+        <div class="contenido_inner">
+            <h2>BUZÓN</h2>
+            <p>Déjanos tus comentarios, quejas o sugerencias para mejorar nuestro servicio o simplemente danos un regalito para esta navidad.</p>
+    
+            <!-- SECCION DE FORMULARIO -->
+            <form class="formulario_contacto" action="#" method="post">
+                <div class="grupo_form">
+                    <label for="tipo">Tipo de Mensaje:</label>
+                    <select id="tipo" name="tipo" class="input_aero" required>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="queja">Queja</option>
+                        <option value="felicitacion">Felicitación</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="grupo_form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="input_aero" placeholder="Tu nombre..." required>
+                </div>
+
+                <div class="grupo_form">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" class="input_aero" placeholder="tu@correo.com" required>
+                </div>
+
+                <div class="grupo_form">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" class="input_aero" rows="4" placeholder="Escribe aquí tu mensaje..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn_enviar">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,480 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {  
+    font-family: 'Courier New', Courier, monospace;
+    color: #1e293b;
+    background-color: #d8deeb; /* Fondo azulado sutil como la referencia */
+    margin: 0;
+}
+
+/* =========================================
+   BARRA DE NAVEGACIÓN (HUD AQUA GLASSHORPHISM)
+   ========================================= */
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 36px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(200, 215, 235, 0.85));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 50, 100, 0.15);
+    box-sizing: border-box;
+}
+
+.navbar_logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #1e3a8a;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
+}
+
+.logo_icon {
+    color: #2563eb;
+    font-size: 1.3rem;
+}
+
+.logo_text {
+    border-left: 2px solid #93c5fd;
+    padding-left: 8px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+/* Botones de navegación con efecto relieve abombado */
+.nav_links a {
+    color: #334155;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding: 8px 16px;
+    border-radius: 20px; /* Bordes muy redondeados tipo pastilla de la imagen */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(180, 205, 235, 0.6));
+    border-top: 1px solid rgba(255, 255, 255, 0.9);
+    border-left: 1px solid rgba(255, 255, 255, 0.8);
+    border-right: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid rgba(100, 140, 190, 0.6);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+}
+
+.nav_links a:hover {
+    background: linear-gradient(to bottom, #60a5fa, #2563eb);
+    color: #ffffff;
+    border-color: #1d4ed8;
+    box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.6), 0 3px 10px rgba(37, 99, 235, 0.4);
+}
+
+.nav_toggle {
+    display: none;
+}
+
+.nav_toggle img {
+    width: 26px;
+    height: 26px;
+    display: block;
+}
+
+/* =========================================
+   HERO HEADER
+   ========================================= */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.videobg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(250, 251, 252);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #ffffff;
+    max-width: 650px;
+    padding: 30px;
+    background: linear-gradient(to bottom, rgb(185, 212, 243), rgba(230, 245, 253, 0.877));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.hero-content h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+    font-size: 1rem;
+    color: #cbd5e1;
+    margin: 0 0 24px 0;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: linear-gradient(to bottom, #60a5fa, #2563eb);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 2px solid #1e40af;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 4px 12px rgba(37, 99, 235, 0.4);
+    display: inline-block;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, #3b82f6, #1d4ed8);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 6px 16px rgba(37, 99, 235, 0.6);
+    transform: translateY(-1px);
+}
+
+/* =========================================
+   SECCIÓN DE CARDS / SERVICIOS
+   ========================================= */
+.contenido {
+    background-color: #f1f5f9;
+    padding: 80px 40px;
+    text-align: center;
+    border-top: 1px solid #cbd5e1;
+}
+
+.contenido_inner {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.contenido h2 {
+    font-size: 2.2rem;
+    color: #0f172a;
+    letter-spacing: 1px;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+}
+
+.contenido p {
+    color: #64748b;
+    font-size: 1rem;
+    margin: 0 0 40px 0;
+}
+
+.cards {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: transparent;
+    height: 240px;
+    perspective: 1200px;
+}
+
+.card_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+.card:hover .card_inner {
+    transform: rotateY(180deg);
+}
+
+.card_front, 
+.card_back {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 14px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 0.9);
+    border-left: 1px solid rgba(255, 255, 255, 0.6);
+    border-right: 1px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.card_front {
+    background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+    color: #0369a1;
+}
+
+.card_back {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: #f8fafc;
+    transform: rotateY(180deg);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.card_icon { 
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.card_title {
+    font-size: 1.2rem;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.card_text {
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.4;
+    color: #334155;
+}
+
+.card_back .card_text {
+    color: #cbd5e1;
+}
+
+/* =========================================
+   SECCIÓN DE GALERÍA Y OVERLAYS
+   ========================================= */
+.seccion_galeria {
+    background-color: #e2e8f0;
+    padding: 80px 40px;
+    border-top: 1px solid #cbd5e1;
+}
+
+.galeria {
+    max-width: 1080px;
+    margin: 20px auto 40px auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.galeria_item {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    height: 280px;
+    background-color: #0f172a;
+    cursor: pointer;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.galeria_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.9);
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.galeria_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.7));
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.galeria_item:hover img {
+    transform: scale(1.06);
+    filter: brightness(1.1);
+}
+
+.galeria_item:hover .galeria_overlay {
+    transform: translateY(0);
+}
+
+.galeria_item:hover {
+    box-shadow: 0 16px 35px rgba(37, 99, 235, 0.25);
+    border-color: #60a5fa;
+}
+
+/* =========================================
+   MEDIA QUERIES (Móviles)
+   ========================================= */
+@media (max-width: 720px) {
+    .nav_links {
+        display: none;
+    }
+    
+    .nav_toggle {
+        display: block;
+    }
+
+    .navbar, .contenido, .seccion_galeria {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+/* =========================================
+   ESTILOS PARA EL FORMULARIO DE CONTACTO (AERO / Y2K)
+   ========================================= */
+.contacto_info {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: #334155;
+}
+
+.contacto_info p {
+    margin: 4px 0;
+}
+
+.formulario_contacto {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 30px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(216, 222, 235, 0.7));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.9);
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 2px solid rgba(100, 140, 190, 0.5);
+    box-shadow: 0 10px 25px rgba(0, 50, 100, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    text-align: left;
+}
+
+.grupo_form {
+    margin-bottom: 20px;
+}
+
+.grupo_form label {
+    display: block;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #1e3a8a;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.input_aero {
+    width: 100%;
+    padding: 10px 14px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: #1e293b;
+    background: linear-gradient(to bottom, #ffffff, #f1f5f9);
+    border-radius: 12px;
+    border-top: 1px solid #94a3b8;
+    border-left: 1px solid #cbd5e1;
+    border-right: 1px solid #cbd5e1;
+    border-bottom: 1px solid #ffffff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.input_aero:focus {
+    border-color: #2563eb;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.08), 0 0 8px rgba(37, 99, 235, 0.4);
+    background: #ffffff;
+}
+
+.formulario_contacto textarea.input_aero {
+    resize: vertical;
+}
+
+.btn_enviar {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
